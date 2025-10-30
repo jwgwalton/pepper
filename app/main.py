@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
 import os
-from app.routers import auth
+from app.routers import auth, graph
 
 # Load environment variables
 load_dotenv()
@@ -19,6 +19,7 @@ app = FastAPI(
 
 # Include routers
 app.include_router(auth.router)
+app.include_router(graph.router)
 
 
 @app.get("/")

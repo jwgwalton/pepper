@@ -20,22 +20,22 @@
 
 ### 1.3 Microsoft Graph API Wrappers
 ```
-- [ ] Create GraphClient wrapper class with authenticated client
-- [ ] Implement email operations:
+- [x] Create GraphClient wrapper class with authenticated client
+- [x] Implement email operations:
   - writeEmail(to, cc, subject, body, importance) → Returns draft
   - sendEmail(draftId OR email params) → Sends email
   - searchEmails(query, folder, top, fromDate) → Returns results
   - readEmail(messageId) → Returns full email
-- [ ] Implement calendar operations:
+- [x] Implement calendar operations:
   - checkSchedulingAssistant(attendees, duration, startDate, endDate, timezone)
   - scheduleMeeting(subject, attendees, startTime, endTime, location, body, isOnline)
-- [ ] Add error handling and retries (exponential backoff)
-- [ ] Add request/response logging
+- [x] Add error handling and retries (exponential backoff)
+- [x] Add request/response logging
 ```
 
 ### 1.4 Testing
 ```
-- [ ] Write unit tests for each API wrapper (mock Graph API)
+- [x] Write unit tests for each API wrapper (mock Graph API)
 - [ ] Create integration tests with real Microsoft account:
   - Test OAuth flow end-to-end
   - Test token refresh
